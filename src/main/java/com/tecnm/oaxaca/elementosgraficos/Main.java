@@ -6,7 +6,6 @@
 package com.tecnm.oaxaca.elementosgraficos;
 
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaFlowLayout;
-import com.tecnm.oaxaca.elementosgraficos.vista.VentanaGridLayout;
 
 /**
  *
@@ -17,7 +16,7 @@ public class Main {
         VentanaFlowLayout ventana = new VentanaFlowLayout();
         ventana.inicializar();
         
-        VentanaGridLayout ventana2 = new VentanaGridLayout();
-        ventana2.inicializar();
+        //VentanaGridLayout ventana2 = new VentanaGridLayout();
+        //ventana2.inicializar();
     }
 }
