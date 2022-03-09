@@ -14,10 +14,13 @@ import javax.swing.JFrame;
  */
 public abstract class Ventana extends JFrame{
     
-    protected LayoutManager layoutManager;
+    //protected LayoutManager layoutManager;
 
 
-    public Ventana(){
+    public Ventana(LayoutManager layout){
+        this.setLayout(layout);
+        inicializar();
+        configurarComponentes();
     }
 
     public void inicializar(){
@@ -25,4 +28,6 @@ public abstract class Ventana extends JFrame{
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
     }
+    
+    public abstract void configurarComponentes();
 }

@@ -5,8 +5,11 @@
  */
 package com.tecnm.oaxaca.elementosgraficos;
 
+import com.tecnm.oaxaca.elementosgraficos.vista.Ventana;
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaBorderLayout;
+import com.tecnm.oaxaca.elementosgraficos.vista.VentanaCheckBox;
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaFlowLayout;
+import com.tecnm.oaxaca.elementosgraficos.vista.VentanaLista;
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaPanel;
 
 /**
@@ -16,7 +19,7 @@ import com.tecnm.oaxaca.elementosgraficos.vista.VentanaPanel;
 public class Main {
     public static void main(String[] args) {
         /*VentanaFlowLayout ventana = new VentanaFlowLayout();
-        ventana.inicializar();*/
+        ventana.inicializar();
         
         //VentanaGridLayout ventana2 = new VentanaGridLayout();
         //ventana2.inicializar();
@@ -24,7 +27,9 @@ public class Main {
         /*VentanaBorderLayout ventana = new VentanaBorderLayout();
         ventana.inicializar();*/
         
-        VentanaPanel ventana = new VentanaPanel();
-        ventana.inicializar();
+        /*VentanaPanel ventana = new VentanaPanel();
+        ventana.inicializar();*/
+        
+        Ventana ventana = new VentanaCheckBox();
     }
 }

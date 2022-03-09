@@ -20,6 +20,7 @@ import javax.swing.JTextField;
 public class VentanaFlowLayout extends JFrame{
     private JTextField cuadroDeTexto;
     private JTextArea cuadroAreaTexto;
+    private JLabel etiqueta;
     
     public void inicializar(){
         this.setSize(500, 500);
@@ -35,7 +36,7 @@ public class VentanaFlowLayout extends JFrame{
         VentanaFlowLayoutController controlladorEscuchador = new VentanaFlowLayoutController(this);
         boton.addActionListener(controlladorEscuchador);
         
-        JLabel etiqueta = new JLabel("Escribe el texto a evalular");
+        etiqueta = new JLabel("Escribe el texto a evaluar");
         cuadroDeTexto = new JTextField(10);
         //JTextField cuadroDeTexto2 = new JTextField(45);
         
@@ -55,5 +56,11 @@ public class VentanaFlowLayout extends JFrame{
     public JTextArea getCuadroAreaTexto() {
         return cuadroAreaTexto;
     }
+
+    public JLabel getEtiqueta() {
+        return etiqueta;
+    }
+    
+    
 }
 
