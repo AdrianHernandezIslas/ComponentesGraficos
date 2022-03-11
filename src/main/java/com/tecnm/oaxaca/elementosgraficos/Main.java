@@ -8,7 +8,9 @@ package com.tecnm.oaxaca.elementosgraficos;
 import com.tecnm.oaxaca.elementosgraficos.vista.Ventana;
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaBorderLayout;
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaCheckBox;
+import com.tecnm.oaxaca.elementosgraficos.vista.VentanaEventoTecla;
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaFlowLayout;
+import com.tecnm.oaxaca.elementosgraficos.vista.VentanaGridLayout;
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaLista;
 import com.tecnm.oaxaca.elementosgraficos.vista.VentanaPanel;
 
@@ -21,8 +23,7 @@ public class Main {
         /*VentanaFlowLayout ventana = new VentanaFlowLayout();
         ventana.inicializar();
         
-        //VentanaGridLayout ventana2 = new VentanaGridLayout();
-        //ventana2.inicializar();
+       
         
         /*VentanaBorderLayout ventana = new VentanaBorderLayout();
         ventana.inicializar();*/
@@ -30,6 +31,10 @@ public class Main {
         /*VentanaPanel ventana = new VentanaPanel();
         ventana.inicializar();*/
         
-        Ventana ventana = new VentanaCheckBox();
+        //Ventana ventana = new VentanaCheckBox();
+         //VentanaGridLayout ventana2 = new VentanaGridLayout();
+        //ventana2.inicializar();
+        
+        Ventana ventana = new VentanaEventoTecla();
     }
 }

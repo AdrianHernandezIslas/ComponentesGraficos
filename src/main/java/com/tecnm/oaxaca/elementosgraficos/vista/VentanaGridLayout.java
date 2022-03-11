@@ -25,17 +25,17 @@ public class VentanaGridLayout extends JFrame {
         this.setSize(500, 500);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLayout(new GridLayout(3,3));
+        this.setLayout(new GridLayout(2,2));
         //configurarElementos();
-        agregarVariosElementos(9);
+        agregarVariosElementos(4);
         this.setVisible(true);
     }
 
     private void configurarElementos() {
         JButton boton = new JButton("soy un boton");
         JLabel etiqueta = new JLabel("soy una etiqueta");
-        this.add(boton);
-        this.add(etiqueta);
+        //this.add(boton);
+        //this.add(etiqueta);
     }
     
     private void agregarVariosElementos(int cantidadElementos){
@@ -45,7 +45,7 @@ public class VentanaGridLayout extends JFrame {
             this.add(boton);
         }
         JTextField cuadroDeTexto = new JTextField();
-        this.add(cuadroDeTexto);
+       // this.add(cuadroDeTexto);
     }
 
 }
