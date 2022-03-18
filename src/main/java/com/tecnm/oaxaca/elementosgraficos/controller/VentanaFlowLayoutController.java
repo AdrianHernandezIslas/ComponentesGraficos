@@ -24,8 +24,12 @@ public class VentanaFlowLayoutController implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        String texto = ventanaFlowLayout.getCuadroDeTexto().getText();
-        ventanaFlowLayout.getEtiqueta().setText(texto);
+        if(ventanaFlowLayout.getRadio().isSelected()){
+            String texto = ventanaFlowLayout.getCuadroDeTexto().getText();
+            ventanaFlowLayout.getEtiqueta().setText(texto);
+        }else if(true){
+        }
+       
         
         /*String texto = ventanaFlowLayout.getCuadroDeTexto().getText();
         String alReves = new StringBuilder(texto).reverse().toString();

@@ -21,9 +21,7 @@ import com.tecnm.oaxaca.elementosgraficos.vista.VentanaPanel;
 public class Main {
     public static void main(String[] args) {
         /*VentanaFlowLayout ventana = new VentanaFlowLayout();
-        ventana.inicializar();
-        
-       
+        ventana.inicializar();*
         
         /*VentanaBorderLayout ventana = new VentanaBorderLayout();
         ventana.inicializar();*/
@@ -35,6 +33,9 @@ public class Main {
          //VentanaGridLayout ventana2 = new VentanaGridLayout();
         //ventana2.inicializar();
         
-        Ventana ventana = new VentanaEventoTecla();
+        //Ventana ventana = new VentanaEventoTecla();
+        
+        
+        Ventana ventana = new VentanaLista();
     }
 }

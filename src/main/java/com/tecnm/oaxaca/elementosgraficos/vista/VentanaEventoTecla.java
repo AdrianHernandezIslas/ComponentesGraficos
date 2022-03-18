@@ -27,6 +27,8 @@ public class VentanaEventoTecla extends Ventana{
     public void configurarComponentes() {
         cuadroText = new JTextField(10);
         cuadroText.addKeyListener(new VentanaEventoTeclaController());
+        cuadroText.setEditable(true);
+        cuadroText.setText("");
         this.add(cuadroText);
     }
     

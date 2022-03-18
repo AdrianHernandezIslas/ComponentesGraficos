@@ -14,6 +14,8 @@ import java.awt.event.KeyListener;
  */
 public class VentanaEventoTeclaController implements KeyListener {
 
+    private boolean flag;
+    
     @Override
     public void keyPressed(KeyEvent e) {
         //System.out.println("Tecla oprimida" + e.getKeyChar());
@@ -21,10 +23,12 @@ public class VentanaEventoTeclaController implements KeyListener {
 
     @Override
     public void keyTyped(KeyEvent e) {
-        if(!(e.getKeyChar() == '1' || e.getKeyChar() == '2') ){
+        char key = e.getKeyChar();
+        flag = key == '.';
+        if(flag){
             e.consume();
         }
-        System.out.println("number -> "+((int)e.getKeyChar()));
+        
     }
 
     @Override

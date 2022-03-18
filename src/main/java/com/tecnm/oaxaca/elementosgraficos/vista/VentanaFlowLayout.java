@@ -8,8 +8,10 @@ package com.tecnm.oaxaca.elementosgraficos.vista;
 import com.tecnm.oaxaca.elementosgraficos.controller.VentanaFlowLayoutController;
 import java.awt.FlowLayout;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -21,6 +23,7 @@ public class VentanaFlowLayout extends JFrame{
     private JTextField cuadroDeTexto;
     private JTextArea cuadroAreaTexto;
     private JLabel etiqueta;
+    private JRadioButton radio;
     
     public void inicializar(){
         this.setSize(500, 500);
@@ -40,13 +43,19 @@ public class VentanaFlowLayout extends JFrame{
         cuadroDeTexto = new JTextField(10);
         //JTextField cuadroDeTexto2 = new JTextField(45);
         
+        radio = new JRadioButton("Habilidar",false);
         //cuadroAreaTexto = new JTextArea(20, 20);
         
+        this.add(radio);
         this.add(etiqueta);
         this.add(cuadroDeTexto);
         this.add(boton);
         //this.add(cuadroAreaTexto);
         //this.add(cuadroDeTexto2);
+    }
+
+    public JRadioButton getRadio() {
+        return radio;
     }
 
     public JTextField getCuadroDeTexto() {
